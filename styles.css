@@ -1,0 +1,340 @@
+
+/* 
+    Created on : 11-Sep-2017, 10:26:12
+    Author     : El Nuru
+*/
+
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  font-size:20px;
+  position:relative;
+}
+
+.divider{
+    height: 2px;
+    background: #111;
+    box-shadow: 3px 5px 3px 1px #002;
+    margin-top:10px 0px;
+
+}
+a:hover{
+    text-decoration: none;
+}
+
+header img{
+    border:10px double #fff;
+    background:rgba(0,0,0,0.6);
+}
+.page-header{
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+.page-header h4{
+  text-shadow:5px 5px 10px #000;
+  font-size:3rem;
+}
+.page-header h5{
+  font-weight:lighter;
+  font-size:2rem;
+}
+.brand-logo{
+  text-shadow:15px 5px 5px #888;
+  font-size:4rem;
+  letter-spacing:5px;
+  font-weight:600;
+  font-family:serif;
+}
+.side-nav{
+  background:rgba(0,0,0,0.9) !important;
+ }
+.side-nav li a{
+  color:#fff !important;
+  font-size:2rem !important;
+  font-weight:200 !important;
+  margin:60px auto;
+}
+
+.side-nav li a:hover{
+  color:SteelBlue !important;
+}
+
+#about{
+    margin-right:15px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.brief-note{
+  
+}
+
+.brief-note .collapsible-header{
+}
+#skills{
+  font-size:1rem;
+}
+#skills .label{
+ 
+}
+#skills .fa-coffee{
+  color:inherit;
+}
+#skills .glyphicon-fire{
+  color:firebrick;
+  font-size: 5.5rem;
+}
+#skills .fa-android{
+  color:green;
+}
+#skills .fa-html5{
+  color:darkred;
+}
+#skills .fa-css3{
+  color:darkgoldenrod;
+}
+#skills .fa:hover,#skills .glyphicon:hover{
+ animation:bounce 500ms;
+}
+
+#about .glyphicon-info-sign:hover{
+  animation:bounce 500ms;
+}
+#skills .glyphicon-cutlery{
+  
+}
+#projects .glyphicon-briefcase:hover{
+  animation:bounce 500ms;
+}
+#certification .glyphicon-certificate{
+  animation:roller 1.5s infinite;
+}
+#social .glyphicon-thumbs-up:hover{
+  animation:shake 500ms infinite;
+}
+
+#contact .glyphicon-phone-alt:hover{
+   animation:shake 1s infinite;
+}
+#social .fa:hover{
+  animation:bounce .5s;
+}
+.certification{
+    overflow: hidden; 
+    text-align: center;
+    padding:5px;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.projects .card{
+  flex: 1;
+  margin: 10px ;
+  word-wrap: break-word;
+}
+
+#contact{
+  
+}
+.contact form input{
+  color:steelblue;
+  font-size:2rem !important;
+}
+#contact p{
+    background-color:Gray;
+    background-size:100%;
+    background-repeat:repeat-y;
+    color:#fff;
+    padding:10px;
+    border-radius:5px;
+}
+
+.social-icons{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.social-icons a{
+  flex:1;
+}
+
+footer{
+    width:100%;
+    color: #fff;
+    padding:10px auto;
+    border-radius:1px;
+    font-size: 20px;
+    overflow:hidden;
+	position:relative;
+    line-height:5;
+}
+
+footer .label{
+  font-family:hevertical;
+  color:orange;
+  margin:10px;
+}
+.b2top{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  overflow-x:hidden;
+  background:#fff !important;
+  height:60px !important;
+  width:60px !important;
+  border-radius:50% !important;
+  font-size:3rem;
+  padding:0px !important;
+  text-align:center;
+  
+}
+.b2top:hover{
+  background:DimGrey;
+}
+
+footer a{
+  color:Orange;
+}
+
+.modula{
+  display:none;
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  top:0;
+  left: 0;
+  z-index:1;
+  overflow: auto;
+  background:rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  background: #f4f4f4;
+  margin: 10% auto;
+  width:500px;
+  box-shadow:6px 5px 10px rgba(0,0,0,0.5);
+  border-radius:2px;
+  animation: openModal 500ms;
+  z-index:1;
+  text-align:center;
+}
+
+.closeBtn {
+  float: right;
+  font-size: 25px;
+  color: #fff;
+  font-weight:500;
+}
+.closeBtn:hover,.closeBtn:focus{
+  color:red;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight:600;
+}
+
+.modulabtn{
+  font-size:1rem;
+  margin-bottom:5px;
+  outline:none;
+  background:DimGrey !important;
+}
+.modulabtn:hover{
+  background:Orange !important;
+  cursor: pointer;
+  color:white;
+}
+
+@keyframes openModal{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  background:#2F5F73;
+  padding: 10px;
+  color:white;
+  text-align:center;
+}
+.modal-header h2{
+  margin:0;
+  font-weight:300;
+}
+.modal-body{
+  padding: 10px;
+}
+.modal-footer{
+    background:#2F5F73;
+    padding:10px;
+    color:white;
+    text-align: center;
+}
+.modal-footer h4{
+  margin:0;
+  font-weight:100;
+}
+
+
+
+
+@keyframes nav-flip{
+  0%{
+    opacity: 0.6;
+    transform: translateX(-1500px);
+    height:20px;
+  }
+  90%{
+    height: 20px;
+  }
+  100%{
+    opacity: 1;
+    transform:translateX(-16px);
+    height:45px;
+    padding-bottom:50px;
+  }
+}
+
+@keyframes bounce{
+  0%{
+    transform:scale(1)translateY(0px);
+  }
+  50%{
+    transform:scale(1.2) translateY(-10px);
+  }
+  100%{
+    transform:scale(1) translateY(0px);
+  }
+}
+
+@keyframes roller{
+  0%{
+    transform:scale(1.1) rotate(0deg);
+}
+  100%{
+    transform:scale(1.1) rotate(360deg);
+  }
+}
+@keyframes shake{
+  0%{
+    transform:translateY(0px) rotate(5deg);
+  }
+  50%{
+    transform: translateY(1px) rotate(-10deg);
+  }
+  100%{
+    transform: translateY(0px) rotate(13deg);
+  }
+}
+
+
