@@ -36,6 +36,7 @@ header img{
 .page-header h4{
   text-shadow:5px 5px 10px #000;
   font-size:3rem;
+  margin-top:25%;
 }
 .page-header h5{
   font-weight:lighter;
@@ -55,7 +56,7 @@ header img{
   color:#fff !important;
   font-size:2rem !important;
   font-weight:200 !important;
-  margin:60px auto;
+  margin:50px auto;
 }
 
 .side-nav li a:hover{
@@ -76,6 +77,9 @@ header img{
 }
 #skills{
   font-size:1rem;
+}
+#skills .skill-set{
+ padding:50px auto !important;
 }
 #skills .label{
  
@@ -182,26 +186,21 @@ footer .label{
   color:orange;
   margin:10px;
 }
-.b2top{
+.b2top i{
   position:fixed;
   bottom:20px;
   left:20px;
-  overflow-x:hidden;
-  background:#fff !important;
-  height:60px !important;
-  width:60px !important;
-  border-radius:50% !important;
-  font-size:3rem;
+  background:black !important;
+  font-size:5rem !important;
   padding:0px !important;
   text-align:center;
-  
+  color:darkgrey !important;
 }
 .b2top:hover{
-  background:DimGrey;
+  color:darkblue;
 }
 
 footer a{
-  color:Orange;
 }
 
 .modula{
@@ -336,5 +335,4 @@ footer a{
     transform: translateY(0px) rotate(13deg);
   }
 }
-
 
