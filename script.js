@@ -1,15 +1,8 @@
-window.onerror=function(e,u,l){
-	alert(e);
-	alert(l);
-};
-
-
 var modal=document.getElementById("myModal");
 var modalBtn=document.getElementById("modulaBtn");
 var closeBtn=document.querySelector(".closeBtn");
 var whatsappBtn=document.querySelector(".social-icons .fa-whatsapp");
 
-whatsappBtn.addEventListener("click",showNum);
 modalBtn.addEventListener("click",showModal);
 closeBtn.addEventListener("click",closeModal);
 window.addEventListener("click",outSideClick);
@@ -27,10 +20,6 @@ function outSideClick(e){
      modal.style.display="none";
     }
 }
-function showNum(){
-  alert("Find me on Whatsapp via +2348163471885 \nSay laviii... it's spanish!");
-  }
-
 
 var navBtn=document.querySelector(".button-collapse");
 var p1=navBtn.querySelector(".p1");
@@ -71,4 +60,10 @@ $(document).ready(function() {
     return false;
     });
  }); 
+
+$(function() {
+      $(".button-collapse").sideNav();
+      $(".slider").slider();
+  });
+
 
